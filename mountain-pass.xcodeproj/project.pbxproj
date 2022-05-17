@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1700DD8623341F188781B8AB /* Pods_mountain_pass_mountain_passUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A567DBF658C7BFFC58E9D2B /* Pods_mountain_pass_mountain_passUITests.framework */; };
+		47BEB87ACF932795610243C1 /* Pods_mountain_pass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBAF7C22473D9FFCD5C647B /* Pods_mountain_pass.framework */; };
 		4F9B71DB283194F9004C03C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DA283194F9004C03C3 /* AppDelegate.swift */; };
 		4F9B71DD283194F9004C03C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */; };
 		4F9B71DF283194F9004C03C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DE283194F9004C03C3 /* ViewController.swift */; };
-		4F9B71E2283194F9004C03C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B71E0283194F9004C03C3 /* Main.storyboard */; };
 		4F9B71E4283194FD004C03C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B71E3283194FD004C03C3 /* Assets.xcassets */; };
 		4F9B71E7283194FD004C03C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B71E5283194FD004C03C3 /* LaunchScreen.storyboard */; };
 		4F9B71F2283194FD004C03C3 /* mountain_passTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71F1283194FD004C03C3 /* mountain_passTests.swift */; };
 		4F9B71FC283194FD004C03C3 /* mountain_passUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71FB283194FD004C03C3 /* mountain_passUITests.swift */; };
 		4F9B71FE283194FD004C03C3 /* mountain_passUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71FD283194FD004C03C3 /* mountain_passUITestsLaunchTests.swift */; };
+		4F9B720C283233DD004C03C3 /* LaunchScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B720B283233DD004C03C3 /* LaunchScreenBuilder.swift */; };
+		4F9B7215283234FB004C03C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B7214283234FB004C03C3 /* User.swift */; };
+		4F9B7217283238E6004C03C3 /* RegisterUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B7216283238E6004C03C3 /* RegisterUserPresenter.swift */; };
+		4F9B7219283239D7004C03C3 /* RegisterUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B7218283239D7004C03C3 /* RegisterUserView.swift */; };
+		4F9B721B28323A1A004C03C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B721A28323A1A004C03C3 /* LoginView.swift */; };
+		4F9B722028323CA0004C03C3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B721F28323CA0004C03C3 /* LoginPresenter.swift */; };
+		4F9B722628325D69004C03C3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722528325D69004C03C3 /* ProfilePresenter.swift */; };
+		4F9B722828325E1B004C03C3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722728325E1B004C03C3 /* ProfileView.swift */; };
+		4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */; };
+		4F9B72382832CD1E004C03C3 /* DINPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B72372832CD1E004C03C3 /* DINPro.ttf */; };
+		4F9B723A2832CD26004C03C3 /* PT Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B72392832CD26004C03C3 /* PT Sans.ttf */; };
+		4F9B723C2833847A004C03C3 /* ProfileTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */; };
+		5F77171FAD08963A5667D4FE /* Pods_mountain_passTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED82CC97F40B1AB3A68DCD49 /* Pods_mountain_passTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FBAF7C22473D9FFCD5C647B /* Pods_mountain_pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mountain_pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337DFBEA9D0C2A14B70D5AE8 /* Pods-mountain-pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass.debug.xcconfig"; path = "Target Support Files/Pods-mountain-pass/Pods-mountain-pass.debug.xcconfig"; sourceTree = "<group>"; };
+		3457D51A72EDDA9C1732CC70 /* Pods-mountain-passTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-passTests.debug.xcconfig"; path = "Target Support Files/Pods-mountain-passTests/Pods-mountain-passTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4370E6A52D39A1A56F7B95BE /* Pods-mountain-pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass.release.xcconfig"; path = "Target Support Files/Pods-mountain-pass/Pods-mountain-pass.release.xcconfig"; sourceTree = "<group>"; };
 		4F9B71D7283194F9004C03C3 /* mountain-pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mountain-pass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B71DA283194F9004C03C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F9B71DE283194F9004C03C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F9B71E1283194F9004C03C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F9B71E3283194FD004C03C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F9B71E6283194FD004C03C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F9B71E8283194FD004C03C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +66,23 @@
 		4F9B71F7283194FD004C03C3 /* mountain-passUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mountain-passUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B71FB283194FD004C03C3 /* mountain_passUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mountain_passUITests.swift; sourceTree = "<group>"; };
 		4F9B71FD283194FD004C03C3 /* mountain_passUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mountain_passUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F9B720B283233DD004C03C3 /* LaunchScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenBuilder.swift; sourceTree = "<group>"; };
+		4F9B7214283234FB004C03C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F9B7216283238E6004C03C3 /* RegisterUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserPresenter.swift; sourceTree = "<group>"; };
+		4F9B7218283239D7004C03C3 /* RegisterUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserView.swift; sourceTree = "<group>"; };
+		4F9B721A28323A1A004C03C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4F9B721F28323CA0004C03C3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4F9B722528325D69004C03C3 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		4F9B722728325E1B004C03C3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
+		4F9B72372832CD1E004C03C3 /* DINPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINPro.ttf; sourceTree = "<group>"; };
+		4F9B72392832CD26004C03C3 /* PT Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans.ttf"; sourceTree = "<group>"; };
+		4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabBarController.swift; sourceTree = "<group>"; };
+		5A567DBF658C7BFFC58E9D2B /* Pods_mountain_pass_mountain_passUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mountain_pass_mountain_passUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D1C2FAD2395F67E52D0552 /* Pods-mountain-pass-mountain-passUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass-mountain-passUITests.release.xcconfig"; path = "Target Support Files/Pods-mountain-pass-mountain-passUITests/Pods-mountain-pass-mountain-passUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3F85F020D8C6B32C3CB0401 /* Pods-mountain-passTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-passTests.release.xcconfig"; path = "Target Support Files/Pods-mountain-passTests/Pods-mountain-passTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6246BE660306BC3F3B9FA0A /* Pods-mountain-pass-mountain-passUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass-mountain-passUITests.debug.xcconfig"; path = "Target Support Files/Pods-mountain-pass-mountain-passUITests/Pods-mountain-pass-mountain-passUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED82CC97F40B1AB3A68DCD49 /* Pods_mountain_passTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mountain_passTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BEB87ACF932795610243C1 /* Pods_mountain_pass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F77171FAD08963A5667D4FE /* Pods_mountain_passTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1700DD8623341F188781B8AB /* Pods_mountain_pass_mountain_passUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,8 @@
 				4F9B71F0283194FD004C03C3 /* mountain-passTests */,
 				4F9B71FA283194FD004C03C3 /* mountain-passUITests */,
 				4F9B71D8283194F9004C03C3 /* Products */,
+				DD6DFA0820CEC2A8283F4374 /* Pods */,
+				963D594CEEDE99573A056ACC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +138,16 @@
 		4F9B71D9283194F9004C03C3 /* mountain-pass */ = {
 			isa = PBXGroup;
 			children = (
+				4F9B722B2832C622004C03C3 /* Assets */,
+				4F9B720B283233DD004C03C3 /* LaunchScreenBuilder.swift */,
+				4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */,
+				4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */,
+				4F9B722128325CED004C03C3 /* ProfileModule */,
+				4F9B721C28323C0F004C03C3 /* LoginModule */,
+				4F9B720D2832347C004C03C3 /* RegisterModule */,
 				4F9B71DA283194F9004C03C3 /* AppDelegate.swift */,
 				4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */,
 				4F9B71DE283194F9004C03C3 /* ViewController.swift */,
-				4F9B71E0283194F9004C03C3 /* Main.storyboard */,
 				4F9B71E3283194FD004C03C3 /* Assets.xcassets */,
 				4F9B71E5283194FD004C03C3 /* LaunchScreen.storyboard */,
 				4F9B71E8283194FD004C03C3 /* Info.plist */,
@@ -127,6 +172,138 @@
 			path = "mountain-passUITests";
 			sourceTree = "<group>";
 		};
+		4F9B720D2832347C004C03C3 /* RegisterModule */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B7211283234CB004C03C3 /* Model */,
+				4F9B7213283234DC004C03C3 /* View */,
+				4F9B7212283234D2004C03C3 /* Presenter */,
+			);
+			path = RegisterModule;
+			sourceTree = "<group>";
+		};
+		4F9B7211283234CB004C03C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B7214283234FB004C03C3 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F9B7212283234D2004C03C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B7216283238E6004C03C3 /* RegisterUserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F9B7213283234DC004C03C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B7218283239D7004C03C3 /* RegisterUserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F9B721C28323C0F004C03C3 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B721E28323C2D004C03C3 /* View */,
+				4F9B721D28323C20004C03C3 /* Presenter */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		4F9B721D28323C20004C03C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B721F28323CA0004C03C3 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F9B721E28323C2D004C03C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B721A28323A1A004C03C3 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F9B722128325CED004C03C3 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B722228325D01004C03C3 /* Model */,
+				4F9B722328325D0F004C03C3 /* View */,
+				4F9B722428325D15004C03C3 /* Presenter */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		4F9B722228325D01004C03C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F9B722328325D0F004C03C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B722728325E1B004C03C3 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F9B722428325D15004C03C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B722528325D69004C03C3 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F9B722B2832C622004C03C3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B722C2832C71A004C03C3 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F9B722C2832C71A004C03C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B72392832CD26004C03C3 /* PT Sans.ttf */,
+				4F9B72372832CD1E004C03C3 /* DINPro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		963D594CEEDE99573A056ACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FBAF7C22473D9FFCD5C647B /* Pods_mountain_pass.framework */,
+				5A567DBF658C7BFFC58E9D2B /* Pods_mountain_pass_mountain_passUITests.framework */,
+				ED82CC97F40B1AB3A68DCD49 /* Pods_mountain_passTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD6DFA0820CEC2A8283F4374 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				337DFBEA9D0C2A14B70D5AE8 /* Pods-mountain-pass.debug.xcconfig */,
+				4370E6A52D39A1A56F7B95BE /* Pods-mountain-pass.release.xcconfig */,
+				C6246BE660306BC3F3B9FA0A /* Pods-mountain-pass-mountain-passUITests.debug.xcconfig */,
+				68D1C2FAD2395F67E52D0552 /* Pods-mountain-pass-mountain-passUITests.release.xcconfig */,
+				3457D51A72EDDA9C1732CC70 /* Pods-mountain-passTests.debug.xcconfig */,
+				B3F85F020D8C6B32C3CB0401 /* Pods-mountain-passTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F9B7201283194FD004C03C3 /* Build configuration list for PBXNativeTarget "mountain-pass" */;
 			buildPhases = (
+				76950BF9B427F3CC02A396DF /* [CP] Check Pods Manifest.lock */,
 				4F9B71D3283194F9004C03C3 /* Sources */,
 				4F9B71D4283194F9004C03C3 /* Frameworks */,
 				4F9B71D5283194F9004C03C3 /* Resources */,
+				245F6725F10263FFFA27C5B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +330,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F9B7204283194FD004C03C3 /* Build configuration list for PBXNativeTarget "mountain-passTests" */;
 			buildPhases = (
+				C34CFFA3D683369F584943F1 /* [CP] Check Pods Manifest.lock */,
 				4F9B71E9283194FD004C03C3 /* Sources */,
 				4F9B71EA283194FD004C03C3 /* Frameworks */,
 				4F9B71EB283194FD004C03C3 /* Resources */,
@@ -169,9 +349,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F9B7207283194FD004C03C3 /* Build configuration list for PBXNativeTarget "mountain-passUITests" */;
 			buildPhases = (
+				1E6EDE6134831798127C25C2 /* [CP] Check Pods Manifest.lock */,
 				4F9B71F3283194FD004C03C3 /* Sources */,
 				4F9B71F4283194FD004C03C3 /* Frameworks */,
 				4F9B71F5283194FD004C03C3 /* Resources */,
+				E7CC404ED976720FDB74A9EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +413,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9B723A2832CD26004C03C3 /* PT Sans.ttf in Resources */,
 				4F9B71E7283194FD004C03C3 /* LaunchScreen.storyboard in Resources */,
+				4F9B72382832CD1E004C03C3 /* DINPro.ttf in Resources */,
 				4F9B71E4283194FD004C03C3 /* Assets.xcassets in Resources */,
-				4F9B71E2283194F9004C03C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +436,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E6EDE6134831798127C25C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mountain-pass-mountain-passUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		245F6725F10263FFFA27C5B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mountain-pass/Pods-mountain-pass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mountain-pass/Pods-mountain-pass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mountain-pass/Pods-mountain-pass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76950BF9B427F3CC02A396DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mountain-pass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34CFFA3D683369F584943F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mountain-passTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CC404ED976720FDB74A9EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mountain-pass-mountain-passUITests/Pods-mountain-pass-mountain-passUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mountain-pass-mountain-passUITests/Pods-mountain-pass-mountain-passUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mountain-pass-mountain-passUITests/Pods-mountain-pass-mountain-passUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F9B71D3283194F9004C03C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +546,17 @@
 			files = (
 				4F9B71DF283194F9004C03C3 /* ViewController.swift in Sources */,
 				4F9B71DB283194F9004C03C3 /* AppDelegate.swift in Sources */,
+				4F9B7219283239D7004C03C3 /* RegisterUserView.swift in Sources */,
+				4F9B722028323CA0004C03C3 /* LoginPresenter.swift in Sources */,
+				4F9B720C283233DD004C03C3 /* LaunchScreenBuilder.swift in Sources */,
+				4F9B7215283234FB004C03C3 /* User.swift in Sources */,
+				4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */,
 				4F9B71DD283194F9004C03C3 /* SceneDelegate.swift in Sources */,
+				4F9B723C2833847A004C03C3 /* ProfileTabBarController.swift in Sources */,
+				4F9B721B28323A1A004C03C3 /* LoginView.swift in Sources */,
+				4F9B722628325D69004C03C3 /* ProfilePresenter.swift in Sources */,
+				4F9B7217283238E6004C03C3 /* RegisterUserPresenter.swift in Sources */,
+				4F9B722828325E1B004C03C3 /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +593,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4F9B71E0283194F9004C03C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F9B71E1283194F9004C03C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F9B71E5283194FD004C03C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +722,7 @@
 		};
 		4F9B7202283194FD004C03C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337DFBEA9D0C2A14B70D5AE8 /* Pods-mountain-pass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,7 +733,6 @@
 				INFOPLIST_FILE = "mountain-pass/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +750,7 @@
 		};
 		4F9B7203283194FD004C03C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4370E6A52D39A1A56F7B95BE /* Pods-mountain-pass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +761,6 @@
 				INFOPLIST_FILE = "mountain-pass/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +778,7 @@
 		};
 		4F9B7205283194FD004C03C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3457D51A72EDDA9C1732CC70 /* Pods-mountain-passTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +799,7 @@
 		};
 		4F9B7206283194FD004C03C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F85F020D8C6B32C3CB0401 /* Pods-mountain-passTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +820,7 @@
 		};
 		4F9B7208283194FD004C03C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6246BE660306BC3F3B9FA0A /* Pods-mountain-pass-mountain-passUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +839,7 @@
 		};
 		4F9B7209283194FD004C03C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D1C2FAD2395F67E52D0552 /* Pods-mountain-pass-mountain-passUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
