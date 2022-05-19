@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>DINPro.ttf</string>
 		<string>PT Sans.ttf</string>
+		<string>Montserrat-Light.ttf</string>
 		<string>DINPro.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

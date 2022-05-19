@@ -26,9 +26,10 @@
 		4F9B722628325D69004C03C3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722528325D69004C03C3 /* ProfilePresenter.swift */; };
 		4F9B722828325E1B004C03C3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722728325E1B004C03C3 /* ProfileView.swift */; };
 		4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */; };
-		4F9B72382832CD1E004C03C3 /* DINPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B72372832CD1E004C03C3 /* DINPro.ttf */; };
-		4F9B723A2832CD26004C03C3 /* PT Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B72392832CD26004C03C3 /* PT Sans.ttf */; };
 		4F9B723C2833847A004C03C3 /* ProfileTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */; };
+		4F9B723E2835381C004C03C3 /* PT Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B723D2835381C004C03C3 /* PT Sans.ttf */; };
+		4F9B72402835386A004C03C3 /* DINPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B723F2835386A004C03C3 /* DINPro.ttf */; };
+		4F9B724228355131004C03C3 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B724128355131004C03C3 /* Montserrat-Light.ttf */; };
 		5F77171FAD08963A5667D4FE /* Pods_mountain_passTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED82CC97F40B1AB3A68DCD49 /* Pods_mountain_passTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,9 +76,10 @@
 		4F9B722528325D69004C03C3 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		4F9B722728325E1B004C03C3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
-		4F9B72372832CD1E004C03C3 /* DINPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINPro.ttf; sourceTree = "<group>"; };
-		4F9B72392832CD26004C03C3 /* PT Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans.ttf"; sourceTree = "<group>"; };
 		4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabBarController.swift; sourceTree = "<group>"; };
+		4F9B723D2835381C004C03C3 /* PT Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans.ttf"; sourceTree = "<group>"; };
+		4F9B723F2835386A004C03C3 /* DINPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINPro.ttf; sourceTree = "<group>"; };
+		4F9B724128355131004C03C3 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		5A567DBF658C7BFFC58E9D2B /* Pods_mountain_pass_mountain_passUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mountain_pass_mountain_passUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D1C2FAD2395F67E52D0552 /* Pods-mountain-pass-mountain-passUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass-mountain-passUITests.release.xcconfig"; path = "Target Support Files/Pods-mountain-pass-mountain-passUITests/Pods-mountain-pass-mountain-passUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B3F85F020D8C6B32C3CB0401 /* Pods-mountain-passTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-passTests.release.xcconfig"; path = "Target Support Files/Pods-mountain-passTests/Pods-mountain-passTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -275,8 +277,9 @@
 		4F9B722C2832C71A004C03C3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4F9B72392832CD26004C03C3 /* PT Sans.ttf */,
-				4F9B72372832CD1E004C03C3 /* DINPro.ttf */,
+				4F9B723D2835381C004C03C3 /* PT Sans.ttf */,
+				4F9B723F2835386A004C03C3 /* DINPro.ttf */,
+				4F9B724128355131004C03C3 /* Montserrat-Light.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -413,9 +416,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F9B723A2832CD26004C03C3 /* PT Sans.ttf in Resources */,
+				4F9B724228355131004C03C3 /* Montserrat-Light.ttf in Resources */,
+				4F9B723E2835381C004C03C3 /* PT Sans.ttf in Resources */,
 				4F9B71E7283194FD004C03C3 /* LaunchScreen.storyboard in Resources */,
-				4F9B72382832CD1E004C03C3 /* DINPro.ttf in Resources */,
+				4F9B72402835386A004C03C3 /* DINPro.ttf in Resources */,
 				4F9B71E4283194FD004C03C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -33,7 +33,7 @@ class LoginView: UIViewController {
         button.setTitle("ВОЙТИ", for: .normal)
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "PT Sans", size: 16)
+        button.titleLabel?.font = UIFont(name: "PT Sans", size: 20)
         
         button.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +47,7 @@ class LoginView: UIViewController {
         let label = UILabel()
         label.text = "#ПОХОДЫ #СВОБОДА #ПРЕОДОЛЕНИЯ #ОТКРЫТИЯ"
         label.textColor = .white
-        label.font = UIFont(name: "PT Sans", size: 20)
+        label.font = UIFont(name: "DINPro", size: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 2
         label.textAlignment = .center
@@ -59,6 +59,7 @@ class LoginView: UIViewController {
         let label = UILabel()
         label.text = "ОПИШИ ПЕРЕВАЛ"
         label.textColor = .white
+        label.textAlignment = .center
         label.font = UIFont(name: "PT Sans", size: 36)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -69,6 +70,7 @@ class LoginView: UIViewController {
         label.text = "Наполняем каталог перевалов вместе"
         label.textColor = .white
         label.font = UIFont(name: "PT Sans", size: 16)
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -140,25 +142,26 @@ extension LoginView {
 
         NSLayoutConstraint.activate([
             firstLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            firstLabel.widthAnchor.constraint(equalToConstant: 250),
+            firstLabel.widthAnchor.constraint(equalToConstant: 300),
             firstLabel.topAnchor.constraint(equalTo: adventureMapImage.bottomAnchor, constant: 25)])
         
         NSLayoutConstraint.activate([
+            secondLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            secondLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             secondLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            secondLabel.widthAnchor.constraint(equalToConstant: 250),
-            secondLabel.topAnchor.constraint(equalTo: firstLabel.bottomAnchor, constant: 50)])
+            secondLabel.topAnchor.constraint(equalTo: firstLabel.bottomAnchor, constant: 35)])
         
         NSLayoutConstraint.activate([
             thirdLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             thirdLabel.widthAnchor.constraint(equalToConstant: 350),
-            thirdLabel.topAnchor.constraint(equalTo: secondLabel.bottomAnchor, constant: 50)])
+            thirdLabel.topAnchor.constraint(equalTo: secondLabel.bottomAnchor, constant: 20)])
         
         NSLayoutConstraint.activate([
             loginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             loginButton.heightAnchor.constraint(equalToConstant: 55),
             loginButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
             loginButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            loginButton.topAnchor.constraint(equalTo: thirdLabel.bottomAnchor, constant: 50)])
+            loginButton.topAnchor.constraint(equalTo: thirdLabel.bottomAnchor, constant: 65)])
         
     }
 }
