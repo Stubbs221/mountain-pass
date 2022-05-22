@@ -30,6 +30,8 @@ class RegisterUserView: UIViewController {
     var phoneNumber: String = ""
     var socialNetwork: String = ""
     
+    private var currentTextField: UITextField?
+    
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         
@@ -84,6 +86,7 @@ class RegisterUserView: UIViewController {
         button.setTitle("ВОЙТИ", for: .normal)
         button.titleLabel?.font = UIFont(name: "Montserrat-Light", size: 20)
         button.layer.cornerRadius = 25
+        button.addTarget(self, action: #selector(registerUserPressed), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -94,6 +97,22 @@ class RegisterUserView: UIViewController {
         return tabBar
     }()
     
+//    MARK: - Actions
+    
+    @objc func registerUserPressed() {
+        if let currentTextField = currentTextField {
+            currentTextField.resignFirstResponder()
+        }
+        
+        presenter.registerUserBtnPressed(firstName: firstName, middleName: middleName, lastName: lastName, email: email, phoneNumber: phoneNumber, socialNetworkURL: socialNetwork)
+        
+        print("View receives: \(firstName),\(middleName),\(lastName),\(email),\(phoneNumber),\(socialNetwork)")
+        let profileVC = ProfileTabBarController()
+        
+        profileVC.modalPresentationStyle = .fullScreen
+        self.present(profileVC, animated: true, completion: nil)
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -109,8 +128,17 @@ class RegisterUserView: UIViewController {
 // MARK: - Conforming 'RegisterUserPresenterProtocol'
 
 extension RegisterUserView: RegisterUserViewProtocol {
+    func onUserRegisterSuccess(message: String) {
+        print("User successfuly added to Realm Data Base")
+    }
+    
     func onUserRegisterFailure(message: String) {
+        let alert = UIAlertController(title: "Ошибка записи", message: "перезапустите приложение и попробуйте снова", preferredStyle: .alert)
+
+        let okButton = UIAlertAction(title: "Принять", style: .cancel, handler: nil)
+        alert.addAction(okButton)
         
+        present(alert, animated: true, completion: nil)
     }
     
     
@@ -262,7 +290,7 @@ extension RegisterUserView: UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        
+        currentTextField = textField
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -278,16 +306,20 @@ extension RegisterUserView: UITextFieldDelegate {
         case 1:
             middleName = textField.text ?? ""
         case 2:
+            print("получен текст \(textField.text!)")
             lastName = textField.text ?? ""
         case 3:
             email = textField.text ?? ""
         case 4:
             phoneNumber = textField.text ?? ""
         case 5:
+            print("получен текст \(textField.text!)")
             socialNetwork = textField.text ?? ""
         default:
             return
             
         }
     }
+    
+    
 }

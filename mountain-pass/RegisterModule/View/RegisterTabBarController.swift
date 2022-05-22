@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileTabBarController: UITabBarController, UITabBarControllerDelegate {
+class RegisterTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +17,9 @@ class ProfileTabBarController: UITabBarController, UITabBarControllerDelegate {
         appearance.backgroundColor = UIColor(named: "BasicLightGrayColor")
         tabBar.standardAppearance = appearance
         tabBar.scrollEdgeAppearance = tabBar.standardAppearance
-        let nav = generateNavController(vc: RegisterUserView(), image: UIImage(systemName: "line.3.horizontal")!)
-        let nav1 = generateNavController(vc: RegisterUserView(), image: UIImage(named: "Vector.png")!)
-        let nav2 = generateNavController(vc: RegisterUserView(), image: UIImage(systemName: "magnifyingglass")!)
+        let nav = generateNavController(vc: RegisterScreenBuilder.createRegisterScreen(), image: UIImage(systemName: "line.3.horizontal")!)
+        let nav1 = generateNavController(vc: RegisterScreenBuilder.createRegisterScreen(), image: UIImage(named: "Vector.png")!)
+        let nav2 = generateNavController(vc: RegisterScreenBuilder.createRegisterScreen(), image: UIImage(systemName: "magnifyingglass")!)
         UINavigationBar.appearance().prefersLargeTitles = false
         viewControllers = [nav, nav1, nav2]
         

@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1700DD8623341F188781B8AB /* Pods_mountain_pass_mountain_passUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A567DBF658C7BFFC58E9D2B /* Pods_mountain_pass_mountain_passUITests.framework */; };
 		47BEB87ACF932795610243C1 /* Pods_mountain_pass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FBAF7C22473D9FFCD5C647B /* Pods_mountain_pass.framework */; };
+		4F42DFDD2837851E00C482B9 /* ProfileScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFDC2837851E00C482B9 /* ProfileScreenBuilder.swift */; };
+		4F42DFDF2838131D00C482B9 /* RegisterScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFDE2838131D00C482B9 /* RegisterScreenBuilder.swift */; };
+		4F42DFE1283817CB00C482B9 /* ProfileTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFE0283817CB00C482B9 /* ProfileTabBarController.swift */; };
+		4F42DFE82838DC6500C482B9 /* AddPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFE72838DC6500C482B9 /* AddPassView.swift */; };
+		4F42DFEA2838DC8F00C482B9 /* AddPassPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFE92838DC8F00C482B9 /* AddPassPresenter.swift */; };
+		4F42DFEC2838DCA700C482B9 /* MountainPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFEB2838DCA700C482B9 /* MountainPass.swift */; };
+		4F42DFEE2838DD5900C482B9 /* AddPathScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFED2838DD5900C482B9 /* AddPathScreenBuilder.swift */; };
 		4F9B71DB283194F9004C03C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DA283194F9004C03C3 /* AppDelegate.swift */; };
 		4F9B71DD283194F9004C03C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */; };
 		4F9B71DF283194F9004C03C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DE283194F9004C03C3 /* ViewController.swift */; };
@@ -26,7 +33,7 @@
 		4F9B722628325D69004C03C3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722528325D69004C03C3 /* ProfilePresenter.swift */; };
 		4F9B722828325E1B004C03C3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722728325E1B004C03C3 /* ProfileView.swift */; };
 		4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */; };
-		4F9B723C2833847A004C03C3 /* ProfileTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */; };
+		4F9B723C2833847A004C03C3 /* RegisterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B723B2833847A004C03C3 /* RegisterTabBarController.swift */; };
 		4F9B723E2835381C004C03C3 /* PT Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B723D2835381C004C03C3 /* PT Sans.ttf */; };
 		4F9B72402835386A004C03C3 /* DINPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B723F2835386A004C03C3 /* DINPro.ttf */; };
 		4F9B724228355131004C03C3 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B724128355131004C03C3 /* Montserrat-Light.ttf */; };
@@ -55,6 +62,13 @@
 		337DFBEA9D0C2A14B70D5AE8 /* Pods-mountain-pass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass.debug.xcconfig"; path = "Target Support Files/Pods-mountain-pass/Pods-mountain-pass.debug.xcconfig"; sourceTree = "<group>"; };
 		3457D51A72EDDA9C1732CC70 /* Pods-mountain-passTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-passTests.debug.xcconfig"; path = "Target Support Files/Pods-mountain-passTests/Pods-mountain-passTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4370E6A52D39A1A56F7B95BE /* Pods-mountain-pass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mountain-pass.release.xcconfig"; path = "Target Support Files/Pods-mountain-pass/Pods-mountain-pass.release.xcconfig"; sourceTree = "<group>"; };
+		4F42DFDC2837851E00C482B9 /* ProfileScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenBuilder.swift; sourceTree = "<group>"; };
+		4F42DFDE2838131D00C482B9 /* RegisterScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenBuilder.swift; sourceTree = "<group>"; };
+		4F42DFE0283817CB00C482B9 /* ProfileTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabBarController.swift; sourceTree = "<group>"; };
+		4F42DFE72838DC6500C482B9 /* AddPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassView.swift; sourceTree = "<group>"; };
+		4F42DFE92838DC8F00C482B9 /* AddPassPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassPresenter.swift; sourceTree = "<group>"; };
+		4F42DFEB2838DCA700C482B9 /* MountainPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainPass.swift; sourceTree = "<group>"; };
+		4F42DFED2838DD5900C482B9 /* AddPathScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPathScreenBuilder.swift; sourceTree = "<group>"; };
 		4F9B71D7283194F9004C03C3 /* mountain-pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mountain-pass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B71DA283194F9004C03C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +90,7 @@
 		4F9B722528325D69004C03C3 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		4F9B722728325E1B004C03C3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
-		4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabBarController.swift; sourceTree = "<group>"; };
+		4F9B723B2833847A004C03C3 /* RegisterTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTabBarController.swift; sourceTree = "<group>"; };
 		4F9B723D2835381C004C03C3 /* PT Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans.ttf"; sourceTree = "<group>"; };
 		4F9B723F2835386A004C03C3 /* DINPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINPro.ttf; sourceTree = "<group>"; };
 		4F9B724128355131004C03C3 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
@@ -115,6 +129,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F42DFE22838DB9200C482B9 /* DependenciesBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				4F9B720B283233DD004C03C3 /* LaunchScreenBuilder.swift */,
+				4F42DFDE2838131D00C482B9 /* RegisterScreenBuilder.swift */,
+				4F42DFDC2837851E00C482B9 /* ProfileScreenBuilder.swift */,
+				4F42DFED2838DD5900C482B9 /* AddPathScreenBuilder.swift */,
+			);
+			path = DependenciesBuilder;
+			sourceTree = "<group>";
+		};
+		4F42DFE32838DBCE00C482B9 /* AddPassModule */ = {
+			isa = PBXGroup;
+			children = (
+				4F42DFE42838DBD900C482B9 /* Model */,
+				4F42DFE52838DBE700C482B9 /* View */,
+				4F42DFE62838DBEE00C482B9 /* Presenter */,
+			);
+			path = AddPassModule;
+			sourceTree = "<group>";
+		};
+		4F42DFE42838DBD900C482B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F42DFEB2838DCA700C482B9 /* MountainPass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F42DFE52838DBE700C482B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F42DFE72838DC6500C482B9 /* AddPassView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F42DFE62838DBEE00C482B9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F42DFE92838DC8F00C482B9 /* AddPassPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		4F9B71CE283194F9004C03C3 = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +199,9 @@
 		4F9B71D9283194F9004C03C3 /* mountain-pass */ = {
 			isa = PBXGroup;
 			children = (
+				4F42DFE32838DBCE00C482B9 /* AddPassModule */,
+				4F42DFE22838DB9200C482B9 /* DependenciesBuilder */,
 				4F9B722B2832C622004C03C3 /* Assets */,
-				4F9B720B283233DD004C03C3 /* LaunchScreenBuilder.swift */,
-				4F9B723B2833847A004C03C3 /* ProfileTabBarController.swift */,
 				4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */,
 				4F9B722128325CED004C03C3 /* ProfileModule */,
 				4F9B721C28323C0F004C03C3 /* LoginModule */,
@@ -203,6 +262,7 @@
 		4F9B7213283234DC004C03C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4F9B723B2833847A004C03C3 /* RegisterTabBarController.swift */,
 				4F9B7218283239D7004C03C3 /* RegisterUserView.swift */,
 			);
 			path = View;
@@ -254,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				4F9B722728325E1B004C03C3 /* ProfileView.swift */,
+				4F42DFE0283817CB00C482B9 /* ProfileTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -549,14 +610,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F9B71DF283194F9004C03C3 /* ViewController.swift in Sources */,
+				4F42DFE82838DC6500C482B9 /* AddPassView.swift in Sources */,
+				4F42DFEE2838DD5900C482B9 /* AddPathScreenBuilder.swift in Sources */,
+				4F42DFDF2838131D00C482B9 /* RegisterScreenBuilder.swift in Sources */,
 				4F9B71DB283194F9004C03C3 /* AppDelegate.swift in Sources */,
 				4F9B7219283239D7004C03C3 /* RegisterUserView.swift in Sources */,
 				4F9B722028323CA0004C03C3 /* LoginPresenter.swift in Sources */,
 				4F9B720C283233DD004C03C3 /* LaunchScreenBuilder.swift in Sources */,
+				4F42DFEA2838DC8F00C482B9 /* AddPassPresenter.swift in Sources */,
+				4F42DFDD2837851E00C482B9 /* ProfileScreenBuilder.swift in Sources */,
 				4F9B7215283234FB004C03C3 /* User.swift in Sources */,
 				4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */,
+				4F42DFE1283817CB00C482B9 /* ProfileTabBarController.swift in Sources */,
 				4F9B71DD283194F9004C03C3 /* SceneDelegate.swift in Sources */,
-				4F9B723C2833847A004C03C3 /* ProfileTabBarController.swift in Sources */,
+				4F9B723C2833847A004C03C3 /* RegisterTabBarController.swift in Sources */,
+				4F42DFEC2838DCA700C482B9 /* MountainPass.swift in Sources */,
 				4F9B721B28323A1A004C03C3 /* LoginView.swift in Sources */,
 				4F9B722628325D69004C03C3 /* ProfilePresenter.swift in Sources */,
 				4F9B7217283238E6004C03C3 /* RegisterUserPresenter.swift in Sources */,

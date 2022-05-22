@@ -11,22 +11,21 @@ import RealmSwift
 
 protocol BuilderProtocol {
     static func createLaunchScreen() -> UIViewController
+    static func isUserEmpty() -> Bool
+    
 }
 
 class Builder: BuilderProtocol {
-    static func createLaunchScreen() -> UIViewController {
-        
+    static func isUserEmpty() -> Bool {
         let realm = try! Realm()
         let user = realm.objects(User.self)
+        
+        return user.isEmpty
+    }
+    static func createLaunchScreen() -> UIViewController {
+        
+       
         let model = User()
-        
-        guard user.isEmpty else {
-            let view = ProfileView()
-            let presenter = ProfilePresenter(view: view, model: model)
-            view.presenter = presenter
-            return view
-        }
-        
         let view = LoginView()
         let presenter = LoginPresenter(view: view, model: model)
         view.presenter = presenter

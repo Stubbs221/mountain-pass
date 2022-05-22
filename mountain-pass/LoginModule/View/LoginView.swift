@@ -18,7 +18,7 @@ class LoginView: UIViewController {
 //    MARK: - Actions
     
     @objc func loginButtonPressed() {
-        let registerVC = ProfileTabBarController()
+        let registerVC = RegisterTabBarController()
         registerVC.modalPresentationStyle = .fullScreen
         self.present(registerVC, animated: true, completion: nil)
         

@@ -11,6 +11,7 @@ import RealmSwift
 
 protocol RegisterUserViewProtocol {
     func onUserRegisterFailure(message: String)
+    func onUserRegisterSuccess(message: String)
 }
 
 protocol RegisterUserPresenterProtocol {
@@ -38,6 +39,7 @@ class RegisterUserPresenter: RegisterUserPresenterProtocol {
     func registerUser(firstName: String, middleName: String, lastName: String, email: String, phoneNumber: String, socialNetworkURL: String) {
         print("Presenter adds User to Realm Data Base")
         let user = User(firstName: firstName, middleName: middleName , lastName: lastName, email: email, phoneNumber: phoneNumber, socialNetworks: socialNetworkURL)
+        print("Presenter receives lastName: \(lastName)")
         do {
             try self.realm.write{
                 self.realm.add(user)
@@ -45,5 +47,7 @@ class RegisterUserPresenter: RegisterUserPresenterProtocol {
         } catch {
             view?.onUserRegisterFailure(message: error.localizedDescription)
         }
+        
+        view?.onUserRegisterSuccess(message: "User item added to Realm Data Base")
     }
 }
