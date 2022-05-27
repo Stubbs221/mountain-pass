@@ -12,13 +12,17 @@ protocol AddPassViewProtocol {
 }
 
 protocol AddPassPresenterProtocol {
-    
+    init(view: AddPassViewProtocol, model: MountainPass)
 }
 
-class AddPassPresenter {
+class AddPassPresenter: AddPassPresenterProtocol {
+    let view: AddPassViewProtocol!
+    let model: MountainPass!
     
+    required init(view: AddPassViewProtocol, model: MountainPass) {
+        self.view = view
+        self.model = model
+    }
 }
 
-extension AddPassPresenter: AddPassPresenterProtocol {
-    
-}
+

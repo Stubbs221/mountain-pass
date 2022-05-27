@@ -19,10 +19,11 @@ class ProfileTabBarController: UITabBarController, UITabBarControllerDelegate {
         tabBar.standardAppearance = appearance
         tabBar.scrollEdgeAppearance = tabBar.standardAppearance
         let nav = generateNavController(vc: ProfileScreenBuilder.createProfileScreen(), image: UIImage(systemName: "line.3.horizontal")!)
-        let nav1 = generateNavController(vc: ProfileScreenBuilder.createProfileScreen(), image: UIImage(named: "Vector.png")!)
+        let nav1 = generateNavController(vc: ProfileScreenBuilder.createProfileScreen(), image: UIImage())
         let nav2 = generateNavController(vc: ProfileScreenBuilder.createProfileScreen(), image: UIImage(systemName: "magnifyingglass")!)
         UINavigationBar.appearance().prefersLargeTitles = false
         viewControllers = [nav, nav1, nav2]
+        setupMiddleButton()
         
         
         
@@ -45,6 +46,24 @@ class ProfileTabBarController: UITabBarController, UITabBarControllerDelegate {
     }()
     
 //    MARK: Actiona
+    @objc func addPassPressed() {
+        let vc = AddPassScreenBuilder.createAddPassScreen()
+        let navController = UINavigationController(rootViewController: vc)
+        vc.navigationItem.title = "Добавление перевала"
+        let atributes = [NSAttributedString.Key.font: UIFont(name: "DINPro", size: 20)!]
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "BasicLightGrayColor")
+        appearance.titleTextAttributes = atributes
+        appearance.shadowColor = .black
+        appearance.backgroundColor = .white
+        navController.navigationBar.standardAppearance = appearance
+        navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
+
+
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true, completion: nil)
+    }
     
     @objc func logOutPressed() {
         do {
@@ -60,6 +79,7 @@ class ProfileTabBarController: UITabBarController, UITabBarControllerDelegate {
         self.present(vc, animated: true, completion: nil)
         
     }
+    
     fileprivate func generateNavController(vc: UIViewController, image: UIImage) -> UINavigationController {
         let navController = UINavigationController(rootViewController: vc)
         
@@ -91,8 +111,20 @@ class ProfileTabBarController: UITabBarController, UITabBarControllerDelegate {
         
     }
     
-    func restoreAppearance() {
-            }
+    fileprivate func setupMiddleButton() {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
+        
+        var buttonFrame = button.frame
+        buttonFrame.origin.y = view.bounds.height - buttonFrame.height - 50
+        buttonFrame.origin.x = view.bounds.width/2 - buttonFrame.width/2
+        button.frame = buttonFrame
+        button.setImage(UIImage(named: "addPassIcon"), for: .normal)
+        button.addTarget(self, action: #selector(addPassPressed), for: .touchUpInside)
+        view.addSubview(button)
+        
+//        button.setImage(UIImage(named: "Glass"), for: .normal)
+        
+    }
     /*
     // MARK: - Navigation
 

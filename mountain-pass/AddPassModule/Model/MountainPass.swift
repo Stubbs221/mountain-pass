@@ -6,4 +6,8 @@
 //
 
 import Foundation
+import RealmSwift
 
+class MountainPass {
+    
+}

@@ -15,7 +15,8 @@
 		4F42DFE82838DC6500C482B9 /* AddPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFE72838DC6500C482B9 /* AddPassView.swift */; };
 		4F42DFEA2838DC8F00C482B9 /* AddPassPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFE92838DC8F00C482B9 /* AddPassPresenter.swift */; };
 		4F42DFEC2838DCA700C482B9 /* MountainPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFEB2838DCA700C482B9 /* MountainPass.swift */; };
-		4F42DFEE2838DD5900C482B9 /* AddPathScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFED2838DD5900C482B9 /* AddPathScreenBuilder.swift */; };
+		4F42DFEE2838DD5900C482B9 /* AddPassScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFED2838DD5900C482B9 /* AddPassScreenBuilder.swift */; };
+		4F42DFF2283BD5B300C482B9 /* AddPassNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42DFF1283BD5B300C482B9 /* AddPassNavigationController.swift */; };
 		4F9B71DB283194F9004C03C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DA283194F9004C03C3 /* AppDelegate.swift */; };
 		4F9B71DD283194F9004C03C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */; };
 		4F9B71DF283194F9004C03C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B71DE283194F9004C03C3 /* ViewController.swift */; };
@@ -68,7 +69,8 @@
 		4F42DFE72838DC6500C482B9 /* AddPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassView.swift; sourceTree = "<group>"; };
 		4F42DFE92838DC8F00C482B9 /* AddPassPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassPresenter.swift; sourceTree = "<group>"; };
 		4F42DFEB2838DCA700C482B9 /* MountainPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainPass.swift; sourceTree = "<group>"; };
-		4F42DFED2838DD5900C482B9 /* AddPathScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPathScreenBuilder.swift; sourceTree = "<group>"; };
+		4F42DFED2838DD5900C482B9 /* AddPassScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassScreenBuilder.swift; sourceTree = "<group>"; };
+		4F42DFF1283BD5B300C482B9 /* AddPassNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassNavigationController.swift; sourceTree = "<group>"; };
 		4F9B71D7283194F9004C03C3 /* mountain-pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mountain-pass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B71DA283194F9004C03C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9B71DC283194F9004C03C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 				4F9B720B283233DD004C03C3 /* LaunchScreenBuilder.swift */,
 				4F42DFDE2838131D00C482B9 /* RegisterScreenBuilder.swift */,
 				4F42DFDC2837851E00C482B9 /* ProfileScreenBuilder.swift */,
-				4F42DFED2838DD5900C482B9 /* AddPathScreenBuilder.swift */,
+				4F42DFED2838DD5900C482B9 /* AddPassScreenBuilder.swift */,
 			);
 			path = DependenciesBuilder;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				4F42DFE72838DC6500C482B9 /* AddPassView.swift */,
+				4F42DFF1283BD5B300C482B9 /* AddPassNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -611,11 +614,12 @@
 			files = (
 				4F9B71DF283194F9004C03C3 /* ViewController.swift in Sources */,
 				4F42DFE82838DC6500C482B9 /* AddPassView.swift in Sources */,
-				4F42DFEE2838DD5900C482B9 /* AddPathScreenBuilder.swift in Sources */,
+				4F42DFEE2838DD5900C482B9 /* AddPassScreenBuilder.swift in Sources */,
 				4F42DFDF2838131D00C482B9 /* RegisterScreenBuilder.swift in Sources */,
 				4F9B71DB283194F9004C03C3 /* AppDelegate.swift in Sources */,
 				4F9B7219283239D7004C03C3 /* RegisterUserView.swift in Sources */,
 				4F9B722028323CA0004C03C3 /* LoginPresenter.swift in Sources */,
+				4F42DFF2283BD5B300C482B9 /* AddPassNavigationController.swift in Sources */,
 				4F9B720C283233DD004C03C3 /* LaunchScreenBuilder.swift in Sources */,
 				4F42DFEA2838DC8F00C482B9 /* AddPassPresenter.swift in Sources */,
 				4F42DFDD2837851E00C482B9 /* ProfileScreenBuilder.swift in Sources */,
