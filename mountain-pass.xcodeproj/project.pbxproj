@@ -33,7 +33,6 @@
 		4F9B722028323CA0004C03C3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B721F28323CA0004C03C3 /* LoginPresenter.swift */; };
 		4F9B722628325D69004C03C3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722528325D69004C03C3 /* ProfilePresenter.swift */; };
 		4F9B722828325E1B004C03C3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B722728325E1B004C03C3 /* ProfileView.swift */; };
-		4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */; };
 		4F9B723C2833847A004C03C3 /* RegisterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B723B2833847A004C03C3 /* RegisterTabBarController.swift */; };
 		4F9B723E2835381C004C03C3 /* PT Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B723D2835381C004C03C3 /* PT Sans.ttf */; };
 		4F9B72402835386A004C03C3 /* DINPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B723F2835386A004C03C3 /* DINPro.ttf */; };
@@ -91,7 +90,6 @@
 		4F9B721F28323CA0004C03C3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		4F9B722528325D69004C03C3 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		4F9B722728325E1B004C03C3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
 		4F9B723B2833847A004C03C3 /* RegisterTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTabBarController.swift; sourceTree = "<group>"; };
 		4F9B723D2835381C004C03C3 /* PT Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PT Sans.ttf"; sourceTree = "<group>"; };
 		4F9B723F2835386A004C03C3 /* DINPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINPro.ttf; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				4F42DFE32838DBCE00C482B9 /* AddPassModule */,
 				4F42DFE22838DB9200C482B9 /* DependenciesBuilder */,
 				4F9B722B2832C622004C03C3 /* Assets */,
-				4F9B72292832AAF6004C03C3 /* ConstraintsExtension.swift */,
 				4F9B722128325CED004C03C3 /* ProfileModule */,
 				4F9B721C28323C0F004C03C3 /* LoginModule */,
 				4F9B720D2832347C004C03C3 /* RegisterModule */,
@@ -624,7 +621,6 @@
 				4F42DFEA2838DC8F00C482B9 /* AddPassPresenter.swift in Sources */,
 				4F42DFDD2837851E00C482B9 /* ProfileScreenBuilder.swift in Sources */,
 				4F9B7215283234FB004C03C3 /* User.swift in Sources */,
-				4F9B722A2832AAF6004C03C3 /* ConstraintsExtension.swift in Sources */,
 				4F42DFE1283817CB00C482B9 /* ProfileTabBarController.swift in Sources */,
 				4F9B71DD283194F9004C03C3 /* SceneDelegate.swift in Sources */,
 				4F9B723C2833847A004C03C3 /* RegisterTabBarController.swift in Sources */,

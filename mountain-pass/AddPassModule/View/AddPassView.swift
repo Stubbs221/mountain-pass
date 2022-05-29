@@ -272,12 +272,68 @@ class AddPassView: UIViewController {
         let label = UILabel()
         label.text = "Высота"
         label.textColor = UIColor(named: "BasicGrayColor")
+        label.font = UIFont(name: "PT Sans", size: 13)
         
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
     
+    lazy var textFieldPassHeight: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "1000"
+        textField.font = UIFont(name: "PT Sans", size: 18)
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
+    lazy var labelPhoto: UILabel = {
+        let label = UILabel()
+        label.text = "Фото"
+        label.font = UIFont(name: "PT Sans", size: 24)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var labelAddPhoto: UILabel = {
+        let label = UILabel()
+        label.text = "Добавьте фото"
+        label.font = UIFont(name: "Montserrat-Light", size: 24)
+        label.textColor = UIColor(named: "BasicGrayColor")
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var buttonAddPhotoFromGalery: UIButton = {
+        let view = UIButton()
+        view.layer.borderWidth = 1.0
+        view.layer.cornerRadius = 11
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    lazy var imageAddPhotoFromGalery: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "fromGaleryIcon")
+        image.contentMode = .scaleToFill
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+        
+    }()
+    
+    lazy var labelAddPhotoFromGalery: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Из галереи"
+        label.font = UIFont(name: "DINPro", size: 20)
+        return label
+    }()
+//    lazy var viewAddPhotoFromGalery: UIView = {
+//        let view = UIView()
+//
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//        return view
+//    }()
     
 //    MARK: - Actions
     
@@ -324,6 +380,12 @@ extension AddPassView {
         contentView.addSubview(buttonCurrentDate)
         contentView.addSubview(labelCoordinates)
         contentView.addSubview(viewCoordinates)
+        contentView.addSubview(viewPassHeight)
+        contentView.addSubview(labelPhoto)
+        contentView.addSubview(labelAddPhoto)
+        contentView.addSubview(buttonAddPhotoFromGalery)
+        
+        
         
         
         NSLayoutConstraint.activate([
@@ -447,6 +509,38 @@ extension AddPassView {
         NSLayoutConstraint.activate([
             buttonCoordinates.centerYAnchor.constraint(equalTo: viewCoordinates.centerYAnchor),
             buttonCoordinates.leadingAnchor.constraint(equalTo: viewCoordinates.leadingAnchor, constant: 10)])
+        
+        NSLayoutConstraint.activate([
+            viewPassHeight.widthAnchor.constraint(equalToConstant: 130),
+            viewPassHeight.heightAnchor.constraint(equalToConstant: 60),
+            viewPassHeight.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -25),
+            viewPassHeight.topAnchor.constraint(equalTo: viewCoordinates.topAnchor)
+        ])
+        
+        viewPassHeight.addSubview(labelPassHeight)
+        viewPassHeight.addSubview(textFieldPassHeight)
+        
+        NSLayoutConstraint.activate([
+            labelPassHeight.topAnchor.constraint(equalTo: viewPassHeight.topAnchor, constant: 5),
+            labelPassHeight.leadingAnchor.constraint(equalTo: viewPassHeight.leadingAnchor, constant: 10)])
+        
+        NSLayoutConstraint.activate([
+            textFieldPassHeight.centerYAnchor.constraint(equalTo: viewPassHeight.centerYAnchor),
+            textFieldPassHeight.centerXAnchor.constraint(equalTo: viewPassHeight.centerXAnchor)])
+        
+        NSLayoutConstraint.activate([
+            labelPhoto.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 25),
+            labelPhoto.topAnchor.constraint(equalTo: viewPassHeight.bottomAnchor, constant: 15)])
+        
+        NSLayoutConstraint.activate([
+            labelAddPhoto.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            labelAddPhoto.topAnchor.constraint(equalTo: labelPhoto.bottomAnchor, constant: 25)])
+        
+        NSLayoutConstraint.activate([
+            buttonAddPhotoFromGalery.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            buttonAddPhotoFromGalery.topAnchor.constraint(equalTo: labelAddPhoto.bottomAnchor, constant: 20),
+            buttonAddPhotoFromGalery.widthAnchor.constraint(equalToConstant: 70),
+            buttonAddPhotoFromGalery.heightAnchor.constraint(equalToConstant: 100)])
     }
     
 }
